@@ -13,28 +13,23 @@
 #X obj 444 327 int 1;
 #X floatatom 538 192 5 0 0 0 - - -;
 #X obj 394 214 sel 0;
-#N canvas 0 0 1364 676 numero1 0;
+#N canvas 0 0 1364 676 numero1 1;
 #X floatatom 149 123 5 0 0 0 - - -;
-#X obj 149 156 == 0;
-#X floatatom 45 256 5 0 0 0 - - -;
-#X obj 122 233 t b b;
-#X obj 122 198 spigot;
+#X floatatom 72 204 5 0 0 0 - - -;
 #X obj 149 41 inlet;
-#X obj 122 306 makenote 60 500;
-#X obj 122 347 noteout;
-#X msg 122 272 42;
+#X obj 146 258 makenote 60 500;
+#X obj 146 299 noteout;
+#X msg 146 224 42;
 #X obj 149 87 % 4;
-#X connect 0 0 1 0;
-#X connect 1 0 4 0;
-#X connect 1 0 4 1;
-#X connect 3 0 8 0;
-#X connect 3 0 2 0;
-#X connect 4 0 3 0;
-#X connect 5 0 9 0;
-#X connect 6 0 7 0;
-#X connect 6 1 7 1;
-#X connect 8 0 6 0;
-#X connect 9 0 0 0;
+#X obj 148 175 sel 0;
+#X connect 0 0 7 0;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 3 1 4 1;
+#X connect 5 0 3 0;
+#X connect 6 0 0 0;
+#X connect 7 0 5 0;
+#X connect 7 0 1 0;
 #X restore 59 772 pd numero1;
 #X obj 444 421 % 32;
 #X msg 394 284 -1;
@@ -42,7 +37,7 @@
 #X obj 131 673 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 538 50 vsl 15 128 0 300 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 8500 1;
 #X floatatom 10 737 5 0 0 0 - - -;
 #X floatatom 195 454 5 0 0 0 - - -;
 #X obj 214 620 key;
@@ -53,19 +48,19 @@
 #X floatatom 380 457 5 0 0 0 - - -;
 #X obj 399 623 key;
 #X obj 453 711 spigot;
-#X obj 508 677 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 508 677 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 387 741 5 0 0 0 - - -;
 #X floatatom 572 458 5 0 0 0 - - -;
 #X obj 591 624 key;
 #X obj 648 711 spigot;
-#X obj 703 677 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 703 677 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 582 741 5 0 0 0 - - -;
 #X floatatom 767 458 5 0 0 0 - - -;
 #X obj 786 624 key;
 #X obj 833 715 spigot;
-#X obj 888 681 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 888 681 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 767 745 5 0 0 0 - - -;
 #X floatatom 952 462 5 0 0 0 - - -;
