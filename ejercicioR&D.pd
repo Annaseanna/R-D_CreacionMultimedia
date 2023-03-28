@@ -1,4 +1,4 @@
-#N canvas 0 0 1366 685 16;
+#N canvas -8 -8 1366 685 16;
 #X obj 491 226 metro;
 #X obj 394 255 bng 20 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -13,7 +13,7 @@
 #X obj 444 327 int 1;
 #X floatatom 538 192 5 0 0 0 - - -;
 #X obj 394 214 sel 0;
-#N canvas 0 0 1364 676 numero1 1;
+#N canvas 0 0 1364 676 numero1 0;
 #X floatatom 149 123 5 0 0 0 - - -;
 #X floatatom 72 204 5 0 0 0 - - -;
 #X obj 149 41 inlet;
@@ -36,8 +36,8 @@
 #X obj 76 707 spigot;
 #X obj 131 673 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 538 50 vsl 15 128 0 300 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 8500 1;
+#X obj 538 42 vsl 15 128 0 300 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 8600 1;
 #X floatatom 10 737 5 0 0 0 - - -;
 #X floatatom 195 454 5 0 0 0 - - -;
 #X obj 214 620 key;
@@ -230,7 +230,7 @@
 #X connect 16 0 9 0;
 #X connect 17 0 4 0;
 #X restore 436 776 pd numero3;
-#N canvas 0 0 1364 676 numero4 0;
+#N canvas -7 0 1364 676 numero4 0;
 #X obj 81 507 noteout;
 #X floatatom 74 208 5 0 0 0 - - -;
 #X obj 72 459 makenote 60 300;
@@ -346,7 +346,7 @@
 #X connect 42 0 18 0;
 #X connect 43 0 18 0;
 #X restore 631 776 pd numero4;
-#N canvas 1357 0 1370 676 numero5 0;
+#N canvas 1357 0 1370 676 numero5 1;
 #X obj 60 556 noteout;
 #X floatatom 53 257 5 0 0 0 - - -;
 #X obj 51 508 makenote 60 300;
@@ -464,6 +464,8 @@
 #X obj 358 651 sel 119;
 #X obj 550 652 sel 101;
 #X obj 745 652 sel 114;
+#X obj 482 97 key;
+#X obj 441 125 sel 32;
 #X connect 0 0 5 0;
 #X connect 1 0 13 0;
 #X connect 2 0 0 0;
@@ -519,3 +521,5 @@
 #X connect 56 0 21 0;
 #X connect 57 0 26 0;
 #X connect 58 0 31 0;
+#X connect 59 0 60 0;
+#X connect 60 0 2 0;
